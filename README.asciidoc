@@ -69,4 +69,8 @@ For example for 8 it is like this:
 
 As you can see, it has some peculiarities. First, it considers 1 as a prime number. Second, it recursively factors out other non-prime numbers.
 
+The program needs to implement 3 different verieties. One which directly computes the respond for each request, without any caching or database. One with uses an in memory cache. And one which queries a database.
+
+Then we benchmark each of these variants against different number of concurrent connections.
+
 I beleive that these constrains bring a good balance between simplicity and being easy to implement in one hand and needing to do some non-trivial job on the other hand.
